@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/c_krakow" />
+        app:srcCompat="@mipmap/c_krakow"
+        android:onClick="btnClicked"/>
 
     <TextView
         android:id="@+id/textView3"

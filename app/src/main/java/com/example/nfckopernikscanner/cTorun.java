@@ -12,7 +12,7 @@ public class cTorun extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_torun);
     }
-    public void toFrombork() {
+    public void toKrakow() {
         Intent myIntent = new Intent(cTorun.this, cKrakow.class);
         //myIntent.putExtra("key", value); //Optional parameters
         cTorun.this.startActivity(myIntent);
@@ -20,6 +20,6 @@ public class cTorun extends AppCompatActivity {
 
 
     public void btnClicked(View view) {
-        toFrombork();
+        toKrakow();
     }
 }

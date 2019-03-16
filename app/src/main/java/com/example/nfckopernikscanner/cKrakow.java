@@ -12,14 +12,13 @@ public class cKrakow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_krakow);
     }
-    public void toFrombork() {
-        Intent myIntent = new Intent(cKrakow.this, cFrombork.class);
-        //myIntent.putExtra("key", value); //Optional parameters
+    public void toPadwa() {
+        Intent myIntent = new Intent(cKrakow.this, cPadwa.class);
         cKrakow.this.startActivity(myIntent);
     }
 
 
     public void btnClicked(View view) {
-        toFrombork();
+        toPadwa();
     }
 }

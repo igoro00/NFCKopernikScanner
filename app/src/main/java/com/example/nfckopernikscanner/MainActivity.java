@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             if (tag != null) {
                 byte[] tagId = tag.getId();
                 if (tagId == kartaMiejska) {
-                    toFrombork();
+                    toTorun();
                     Toast.makeText(this,
                             "działa!!!!!",
                             Toast.LENGTH_LONG).show();
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void toFrombork() {
+    public void toTorun() {
         Intent myIntent = new Intent(MainActivity.this, cTorun.class);
         //myIntent.putExtra("key", value); //Optional parameters
         MainActivity.this.startActivity(myIntent);
@@ -70,6 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnClicked(View view) {
-        toFrombork();
+        toTorun();
     }
 }
