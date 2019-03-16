@@ -15,10 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cTorun"></activity>
-        <activity android:name=".cFrombork" />
-        <activity android:name=".Torun" />
-        <activity android:name=".frombork" />
+        <activity android:name=".cKrakow"/>
+        <activity android:name=".cTorun"/>
+        <activity android:name=".cFrombork"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
