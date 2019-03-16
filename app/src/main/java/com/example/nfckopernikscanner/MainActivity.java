@@ -63,10 +63,28 @@ public class MainActivity extends AppCompatActivity {
 
     public void toTorun() {
         Intent myIntent = new Intent(MainActivity.this, cTorun.class);
-        //myIntent.putExtra("key", value); //Optional parameters
         MainActivity.this.startActivity(myIntent);
     }
-    //ToDo: dodaj reszte activities
+    public void toKrakow() {
+        Intent myIntent = new Intent(MainActivity.this, cTorun.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+    public void toPadwa() {
+        Intent myIntent = new Intent(MainActivity.this, cTorun.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+    public void toOlsztyn() {
+        Intent myIntent = new Intent(MainActivity.this, cTorun.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+    public void toLidzbark() {
+        Intent myIntent = new Intent(MainActivity.this, cTorun.class);
+        MainActivity.this.startActivity(myIntent);
+    }
+    public void toFrombork() {
+        Intent myIntent = new Intent(MainActivity.this, cTorun.class);
+        MainActivity.this.startActivity(myIntent);
+    }
 
 
     public void btnClicked(View view) {
