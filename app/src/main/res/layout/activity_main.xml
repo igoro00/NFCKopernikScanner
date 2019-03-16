@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="toFrombork"/>
+        android:onClick="btnClicked"/>
 
     <TextView
         android:id="@+id/textView"
