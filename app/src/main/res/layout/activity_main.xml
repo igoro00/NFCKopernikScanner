@@ -11,14 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="119dp"
+        android:layout_marginBottom="68dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
+        android:onClick="btnClicked"
         android:src="@drawable/nfc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="btnClicked"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,14 +39,26 @@
         android:layout_width="306dp"
         android:layout_height="52dp"
         android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="Szukaj takiego obrazka przy stacjach,\nby dowiedzieć się więcej"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="76dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="253dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textv"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
