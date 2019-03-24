@@ -3,8 +3,9 @@
     package="com.example.nfckopernikscanner">
 
     <uses-permission android:name="android.permission.NFC" />
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <uses-feature
         android:name="android.hardware.nfc"
         android:required="true" />
@@ -16,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cLidzbark"></activity>
+        <activity android:name=".DeviceListActivity"/>
+        <activity android:name=".cLidzbark" />
         <activity android:name=".cOlsztyn" />
         <activity android:name=".cPadwa" />
         <activity android:name=".cKrakow" />
