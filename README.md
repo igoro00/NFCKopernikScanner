@@ -3,4 +3,4 @@ Aplikacja kontrolująca robota Lego Mindstorms EV3 używając Bluetooth i NFC. W
 
 
 
-Plik .apk można pobrać <a href="https://www.mediafire.com/file/9mkldr4w3b9a5ej/app-debug.apk/file">tutaj</a>
+Plik .apk można pobrać <a href="https://www.mediafire.com/file/xfjz478d9gp3ti9/app-debug.apk/file">tutaj</a>
