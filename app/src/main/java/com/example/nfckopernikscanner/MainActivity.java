@@ -26,7 +26,6 @@ import java.io.IOException;
 
 
 //ToDo: Miasta w ktorych mieszkal kopernik: Torun, Krakow, Padwa, Olsztyn, Lidzbark Warminski, Frombork
-//ToDo: Wysylanie i odbieranie sygnalow z LEGO Mindstorms EV3
 
 public class MainActivity extends AppCompatActivity {
     private NfcAdapter mAdapter;
@@ -153,29 +152,6 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void toast(String messageResource) { Toast.makeText(getApplication(), messageResource, Toast.LENGTH_LONG).show(); }
-
-    public void dialog(String city){
-        viewModel.connect();
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Wykryto tag!");
-        builder.setMessage("Czy chcesz kontynuować?");
-        builder.setCancelable(false);
-        builder.setPositiveButton("Tak", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                sendData(city);
-                move(city);
-            }
-        });
-        builder.setNegativeButton("Nie", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-    }
 }
 
 
