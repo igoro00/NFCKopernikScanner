@@ -17,27 +17,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".cLidzbark" />
-        <activity android:name=".cOlsztyn" />
-        <activity android:name=".cPadwa" />
-        <activity android:name=".cKrakow" />
-        <activity android:name=".cTorun" />
-        <activity android:name=".cFrombork" />
-        <activity android:name=".nfc">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.nfc.action.TAG_DISCOVERED" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-        <activity android:name=".PairActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".cLidzbark" android:screenOrientation="portrait"/>
+        <activity android:name=".cOlsztyn" android:screenOrientation="portrait"/>
+        <activity android:name=".cPadwa" android:screenOrientation="portrait"/>
+        <activity android:name=".cKrakow" android:screenOrientation="portrait"/>
+        <activity android:name=".cTorun" android:screenOrientation="portrait"/>
+        <activity android:name=".cFrombork" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.harrysoft.androidbluetoothserial.BluetoothManager;
@@ -46,7 +47,7 @@ public class MainViewModel extends AndroidViewModel {
     private String mac;
 
     // A variable to help us not double-connect
-    private boolean connectionAttemptedOrMade = false;
+    public boolean connectionAttemptedOrMade = false;
     // A variable to help us not setup twice
     private boolean viewModelSetup = false;
 
@@ -93,7 +94,7 @@ public class MainViewModel extends AndroidViewModel {
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(device -> onConnected(device.toSimpleDeviceInterface()), t -> {
-                        toast(R.string.connection_failed);
+                        //toast(R.string.connection_failed);
                         connectionAttemptedOrMade = false;
                         connectionStatusData.postValue(ConnectionStatus.DISCONNECTED);
                     }));
@@ -131,6 +132,7 @@ public class MainViewModel extends AndroidViewModel {
             // Reset the conversation
             messages = new StringBuilder();
             messagesData.postValue(messages.toString());
+            Log.d("NFCKS", "connected");
         } else {
             // deviceInterface was null, so the connection failed
             toast(R.string.connection_failed);
@@ -158,6 +160,14 @@ public class MainViewModel extends AndroidViewModel {
         // Check we have a connected device and the message is not empty, then send the message
         if (deviceInterface != null && !TextUtils.isEmpty(message)) {
             deviceInterface.sendMessage(message);
+            Log.d("NFCKSoutput" , "SendData:  " + message);
+        }
+        else{
+            String error = "N/a";
+            if(deviceInterface == null){ error = "deviceInterface is null, probably not connected";}
+            if(TextUtils.isEmpty(message)) { error = "message is empty";}
+            Log.d("NFCKS", "didnt sent message " + "'" + message + "'");
+            Log.d("NFCKS", "reason: " + error);
         }
     }
 
