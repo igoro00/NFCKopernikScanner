@@ -1,49 +1,39 @@
 package com.example.nfckopernikscanner;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.PendingIntent;
 import android.arch.lifecycle.ViewModelProviders;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.nfc.NdefMessage;
-import android.nfc.NdefRecord;
 import android.nfc.tech.NfcF;
-import android.os.Parcelable;
-import android.support.annotation.StringRes;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import java.io.IOException;
-
 
 //ToDo: Miasta w ktorych mieszkal kopernik: Torun, Krakow, Padwa, Olsztyn, Lidzbark Warminski, Frombork
 
 public class MainActivity extends AppCompatActivity {
+    //BT stuff
+    private MainViewModel viewModel;
+
+    //nfc stuff
     private NfcAdapter mAdapter;
     private PendingIntent mPendingIntent;
     private IntentFilter[] mFilters;
     private String[][] mTechLists;
-    private TextView mText;
-    private int mCount = 0;
+
+    //debugging stuff
     public byte[] kartaMiejska = {91, 66, 64, 99, 54, 101, 101, 48, 51, 57};
-    private MainViewModel viewModel;
     private String TAG = "NFCKS";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mText = (TextView) findViewById(R.id.text);
-        mText.setText("Scan a tag");
         mAdapter = NfcAdapter.getDefaultAdapter(this);
         // Create a generic PendingIntent that will be deliver to this activity. The NFC stack
         // will fill in the intent with the details of the discovered tag before delivering to
@@ -66,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
         // This method return false if there is an error, so if it does, we should close.
-        if (!viewModel.setupViewModel("HC-05", "20:15:12:14:56:71")) {
-            Log.d(TAG, "nie polaczono");
+        if (!viewModel.setupViewModel(getIntent().getStringExtra("device_name"), getIntent().getStringExtra("device_mac"))) {
             finish();
             return;
         }
@@ -150,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, city + " is not correct city");
         }
     }
-    
+
     private void toast(String messageResource) { Toast.makeText(getApplication(), messageResource, Toast.LENGTH_LONG).show(); }
 }
 
