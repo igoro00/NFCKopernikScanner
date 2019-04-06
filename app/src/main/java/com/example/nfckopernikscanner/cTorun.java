@@ -8,14 +8,13 @@ import android.view.View;
 
 
 public class cTorun extends AppCompatActivity {
-    private MainViewModel viewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_torun);
     }
     public void toKrakow() {
-        Intent myIntent = new Intent(cTorun.this, cKrakow.class);
+        Intent myIntent = new Intent(cTorun.this, MainActivity.class);
         //myIntent.putExtra("key", value); //Optional parameters
         cTorun.this.startActivity(myIntent);
     }

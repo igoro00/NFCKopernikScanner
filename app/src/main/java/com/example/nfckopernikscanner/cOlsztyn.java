@@ -15,14 +15,14 @@ public class cOlsztyn extends AppCompatActivity {
         setContentView(R.layout.activity_c_olsztyn);
     }
 
-    public void toLidzbark() {
-        Intent myIntent = new Intent(cOlsztyn.this, cLidzbark.class);
+    public void toDobre() {
+        Intent myIntent = new Intent(cOlsztyn.this, cDobre.class);
         //myIntent.putExtra("key", value); //Optional parameters
         cOlsztyn.this.startActivity(myIntent);
     }
 
 
     public void btnClicked(View view) {
-        toLidzbark();
+        toDobre();
     }
 }
