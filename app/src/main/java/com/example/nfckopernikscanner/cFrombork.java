@@ -3,7 +3,9 @@ package com.example.nfckopernikscanner;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.TextView;
 
 public class cFrombork extends AppCompatActivity {
 
@@ -11,6 +13,9 @@ public class cFrombork extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_frombork);
+        TextView textview = (TextView) findViewById(R.id.textView2);
+        textview.setMovementMethod(new ScrollingMovementMethod());
+        ScrollingMovementMethod.getInstance();
     }
     public void toTorun() {
         Intent myIntent = new Intent(this, cTorun .class);

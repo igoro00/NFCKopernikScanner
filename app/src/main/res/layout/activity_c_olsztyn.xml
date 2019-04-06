@@ -20,9 +20,11 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
         android:lineSpacingExtra="8dp"
         android:lineSpacingMultiplier="1.05"
         android:maxLines="14"
