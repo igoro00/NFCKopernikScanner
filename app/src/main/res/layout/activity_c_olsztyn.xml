@@ -19,14 +19,29 @@
         android:onClick="btnClicked"/>
 
     <TextView
+        android:id="@+id/textView5Help"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/qanelas_heavy"
+        android:text="olsztyn"
+        android:textAllCaps="true"
+        android:textColor="@color/fontsPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
         android:id="@+id/textView5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginRight="20dp"
         android:lineSpacingExtra="8dp"
-        android:lineSpacingMultiplier="1.05"
         android:maxLines="14"
         android:text="@string/olsztyn_info"
         android:textColor="@color/fontsPrimary"
@@ -35,5 +50,7 @@
         app:fontFamily="@font/qanelas_semibolditalic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5Help"/>
+
+
 </android.support.constraint.ConstraintLayout>

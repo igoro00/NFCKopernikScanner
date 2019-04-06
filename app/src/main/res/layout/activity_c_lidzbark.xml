@@ -18,28 +18,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/c_lidzbark" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <TextView
+        android:id="@+id/textView6Help"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/qanelas_heavy"
+        android:text="lidzbark warmiński"
+        android:textAllCaps="true"
+        android:textColor="@color/fontsPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="8sp"
+        android:lineSpacingMultiplier="1.05"
+        android:text="@string/lidzbark_info"
+        android:textColor="@color/fontsPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/qanelas_semibolditalic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8sp"
-            android:lineSpacingMultiplier="1.05"
-            android:text="@string/lidzbark_info"
-            android:textColor="@color/fontsPrimary"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:fontFamily="@font/qanelas_semibolditalic" />
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/textView6Help" />
 
 </android.support.constraint.ConstraintLayout>

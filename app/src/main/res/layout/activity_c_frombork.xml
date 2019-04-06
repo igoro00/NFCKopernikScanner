@@ -17,16 +17,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/c_frombork"
         android:onClick="btnClicked"/>
+    <TextView
+        android:id="@+id/textView2Help"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/qanelas_heavy"
+        android:text="frombork"
+        android:textAllCaps="true"
+        android:textColor="@color/fontsPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginRight="20dp"
         android:fadeScrollbars="true"
         android:lineSpacingExtra="1dp"
+        android:lineSpacingMultiplier="1"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbars="vertical"
         android:scrollHorizontally="false"
@@ -37,5 +53,5 @@
         app:fontFamily="@font/qanelas_semibolditalic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2Help" />
 </android.support.constraint.ConstraintLayout>
