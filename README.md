@@ -1,6 +1,6 @@
 # NFCKopernikScanner
-Aplikacja kontrolująca robota Lego Mindstorms EV3 używając Bluetooth i NFC. Wyświetla również dodatkowe informacje o życiu Mikołaja Kopernika
+Aplikacja wyświetlająca dodatkowe informacje o życiu Mikołaja Kopernika. Jest częścią konkursu "Szlakiem Mikołaja Kopernika"
 
 
 
-Plik .apk można pobrać <a href="https://www.mediafire.com/file/xfjz478d9gp3ti9/app-debug.apk/file">tutaj</a>
+Plik .apk można pobrać <a href="https://drive.google.com/file/d/1CMLVjC5vrIE3QuMoEJd09oMQYT5yz2Wp/view?usp=sharing">tutaj</a>
