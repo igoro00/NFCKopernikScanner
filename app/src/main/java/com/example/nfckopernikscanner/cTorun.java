@@ -13,14 +13,14 @@ public class cTorun extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_torun);
     }
-    public void toKrakow() {
-        Intent myIntent = new Intent(cTorun.this, MainActivity.class);
+    public void toMain() {
+        Intent myIntent = new Intent(cTorun.this, MainActivity.class); //jakas zmiana
         //myIntent.putExtra("key", value); //Optional parameters
         cTorun.this.startActivity(myIntent);
     }
 
 
     public void btnClicked(View view) {
-        toKrakow();
+        toMain();
     }
 }
