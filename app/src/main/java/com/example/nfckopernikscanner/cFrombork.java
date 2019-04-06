@@ -12,14 +12,14 @@ public class cFrombork extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_frombork);
     }
-    public void toMain() {
-        Intent myIntent = new Intent(cFrombork.this, MainActivity .class);
+    public void toTorun() {
+        Intent myIntent = new Intent(this, cTorun .class);
         //myIntent.putExtra("key", value); //Optional parameters
-        cFrombork.this.startActivity(myIntent);
+        this.startActivity(myIntent);
     }
 
 
     public void btnClicked(View view) {
-        toMain();
+        toTorun();
     }
 }

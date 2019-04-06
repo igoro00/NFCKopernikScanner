@@ -1,22 +1,15 @@
 <resources>
     <string name="app_name">NFC Kopernik Scanner</string>
     <string name="jd">informacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje</string>
-    \
-    <string name="messages">Messages:</string>
-    <string name="message">Message</string>
-    <string name="send">Send</string>
-    <string name="paired_devices">Paired devices:</string>
-    <string name="no_messages">No messages sent!</string>
-    <string name="no_bluetooth">Bluetooth not available.</string>
-    <string name="device_name_format">Device: %1$s</string>
-    <string name="status_connecting">Status: Connecting</string>
-    <string name="status_connected">Status: Connected</string>
-    <string name="status_disconnected">Status: Disconnected</string>
-    <string name="connect">Connect</string>
-    <string name="connected">Connected</string>
-    <string name="disconnect">Disconnect</string>
-    <string name="connection_failed">Connection Failed.</string>
-    <string name="bluetooth_unavailable">Connection Failed.</string>
-    <string name="message_send_error">Error sending message!</string>
-    <string name="you_sent">You</string>
+    <string name="olsztyn_info">OLSZTYN Data założeniaok. 1334\n
+                                Prawa miejskie 31 października 1353\n
+                                Prezydent          Piotr Grzymowicz\n
+                                Powierzchnia    88,33[1] km²\n
+                                Wysokość           87,7-154,4 m n.p.m.\n
+                                Populacja (31.12.2017)\n
+                                • liczba ludności\n
+                                • gęstość\n
+                                173 125[2]\n
+                                1 960 os./km²\n
+                                Kopernik przebywał tu od 1516 d 1529</string>
 </resources>

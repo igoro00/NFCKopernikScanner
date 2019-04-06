@@ -13,14 +13,14 @@ public class cLidzbark extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_lidzbark);
     }
-    public void toFrombork() {
-        Intent myIntent = new Intent(cLidzbark.this, cFrombork.class);
+    public void toPieniezno() {
+        Intent myIntent = new Intent(cLidzbark.this, cPieniezno.class);
         //myIntent.putExtra("key", value); //Optional parameters
         cLidzbark.this.startActivity(myIntent);
     }
 
 
     public void btnClicked(View view) {
-        toFrombork();
+        toPieniezno();
     }
 }

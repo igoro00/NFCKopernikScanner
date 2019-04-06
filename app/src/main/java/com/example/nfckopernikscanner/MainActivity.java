@@ -1,7 +1,6 @@
 package com.example.nfckopernikscanner;
 
 import android.app.PendingIntent;
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.nfc.tech.NfcF;
@@ -13,11 +12,9 @@ import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.widget.Toast;
 
-//ToDo: Miasta w ktorych mieszkal kopernik: Torun, Krakow, Padwa, Olsztyn, Lidzbark Warminski, Frombork
+//ToDo: Szlak: Olsztyn, Dobre Miasto, Lidzbark Warminski, Pieniężno, Frombork, Toruń
 
 public class MainActivity extends AppCompatActivity {
-    //BT stuff
-    private MainViewModel viewModel;
 
     //nfc stuff
     private NfcAdapter mAdapter;
@@ -26,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private String[][] mTechLists;
 
     //debugging stuff
-    public byte[] kartaMiejska = {91, 66, 64, 99, 54, 101, 101, 48, 51, 57};
+    public byte[] kartaMiejska = {0x00, 0x3A, 0x77, 0x02, 0x5E ,0x71, 0x04};
     private String TAG = "NFCKS";
 
     @Override
@@ -53,17 +50,6 @@ public class MainActivity extends AppCompatActivity {
         // Setup a tech list for all NfcF tags
         mTechLists = new String[][] { new String[] { NfcF.class.getName() } };
 
-
-        viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
-        // This method return false if there is an error, so if it does, we should close.
-        if (!viewModel.setupViewModel(getIntent().getStringExtra("device_name"), getIntent().getStringExtra("device_mac"))) {
-            finish();
-            return;
-        }
-        //sendData("loading");
-        Log.d(TAG, "LOADING");
-        viewModel.connect();
-
     }
     @Override
     public void onResume() {
@@ -72,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
         if (mAdapter != null) mAdapter.enableForegroundDispatch(this, mPendingIntent, mFilters,
                 mTechLists);
-
     }
 
     @Override
@@ -86,8 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     toast("dziala!");
                 } else {
                     toast(tagId.toString());
-                    sendData("torun");
-                    move("torun");
+                    move("olsztyn");
                 }
             }
         }
@@ -100,39 +84,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnClicked(View view) {
-        sendData("torun");
-        move("torun");
-    }
-
-    public void sendData(String data) {
-        viewModel.sendMessage(data + "\n");
+        move("olsztyn");
     }
 
     public void move(String city) {
         Intent myIntent;
         Log.d(TAG, "Going to " + city);
-        if(city.equals("torun")){
-            myIntent = new Intent(this, cTorun.class);
-            this.startActivity(myIntent);
-        }
-        else if(city.equals("krakow")){
-            myIntent = new Intent(this, cKrakow.class);
-            this.startActivity(myIntent);
-        }
-        else if(city.equals("padwa")){
-            myIntent = new Intent(this, cPadwa.class);
-            this.startActivity(myIntent);
-        }
-        else if(city.equals("olsztyn")){
+        if(city.equals("olsztyn")){
             myIntent = new Intent(this, cOlsztyn.class);
+            this.startActivity(myIntent);
+        }
+        else if(city.equals("dobre")){
+            myIntent = new Intent(this, cDobre.class);
             this.startActivity(myIntent);
         }
         else if(city.equals("lidzbark")){
             myIntent = new Intent(this, cLidzbark.class);
             this.startActivity(myIntent);
         }
+        else if(city.equals("pieniezno")){
+            myIntent = new Intent(this, cPieniezno.class);
+            this.startActivity(myIntent);
+        }
         else if(city.equals("frombork")){
             myIntent = new Intent(this, cFrombork.class);
+            this.startActivity(myIntent);
+        }
+        else if(city.equals("torun")){
+            myIntent = new Intent(this, cTorun.class);
             this.startActivity(myIntent);
         }
         else {
