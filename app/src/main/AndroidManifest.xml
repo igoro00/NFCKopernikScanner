@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nfckopernikscanner">
 
-    <uses-permission android:name="android.permission.NFC" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC"  />
 
     <uses-feature
         android:name="android.hardware.nfc"
@@ -22,9 +20,9 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.nfc.action.TAG_DISCOVERED" />
-
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain"/>
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
