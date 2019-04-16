@@ -7,7 +7,7 @@
     tools:context=".CityActivity">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageViewC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -15,11 +15,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/c_olsztyn"
+        app:srcCompat="@drawable/c_olsztyn"
         android:onClick="btnClicked"/>
 
     <TextView
-        android:id="@+id/textView5Help"
+        android:id="@+id/textViewCITY"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginLeft="18dp"
@@ -32,10 +32,10 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewC" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewINFO"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -50,7 +50,7 @@
         app:fontFamily="@font/qanelas_semibolditalic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5Help"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewCITY"/>
 
 
 </android.support.constraint.ConstraintLayout>
