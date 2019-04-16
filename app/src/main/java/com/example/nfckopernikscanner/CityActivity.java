@@ -1,5 +1,6 @@
 package com.example.nfckopernikscanner;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,6 +55,8 @@ public class CityActivity extends AppCompatActivity {
 
 
     public void btnClicked(View view) {
-
+        Intent myIntent = new Intent(this, MapsActivity.class);
+        myIntent.putExtra("city", city);
+        startActivity(myIntent);
     }
 }

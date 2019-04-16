@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void move(String city) {
-        toast(city);
+        //toast(city);
         Intent myIntent;
         Log.d(LOGCAT, "Going to " + city);
         if(city.equals("olsztyn") || city.equals("dobre") || city.equals("lidzbark") || city.equals("pieniezno") || city.equals("frombork") || city.equals("torun")) {

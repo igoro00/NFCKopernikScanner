@@ -7,4 +7,5 @@
     <string name="torun_info">Mikołaj Kopernik urodził się 19 lutego 1473 przy ulicy świętej Anny w Toruniu.\nMikołaj miał trójkę rodzeństwa, gdy jego ojciec umarł opiekę nad rodziną przejął Łukasz Watzenrode.\nEdukację rozpoczął w szkole miejskiej, potem poszedł na uniwersytecki wydział sztuk wyzwolonych.\nW wieku 18 lat pod naciskiem wuja rozpoczął studia na Wszechnicy Krakowskiej.</string>
     <string name="dobre_info">Dobre Miasto było miastem biskupim. Przebiega przez nie pieszy szlak kopernikowski.\nNie ma jednak dowodów, że kopernik mieszkał w Dobrym Mieście.</string>
     <string name="pieniezno_info">W Pieniężnie Kopernik mieszkał od 1517 do 1519 roku w zamku wybudowanym przez kapitułę warmińską na początku XIVw.</string>
+    <string name="title_activity_maps">Mapa</string>
 </resources>
