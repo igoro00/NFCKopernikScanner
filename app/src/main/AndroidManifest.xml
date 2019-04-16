@@ -34,21 +34,6 @@
         <activity
             android:name=".CityActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".cDobre"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".cLidzbark"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".cPieniezno"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".cFrombork"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".cTorun"
-            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

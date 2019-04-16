@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">NFC Kopernik Scanner</string>
-    <string name="jd">informacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje\ninformacje</string>
+
     <string name="olsztyn_info">Kopernik przybył do Olsztyna w 1516.\nTo tutaj napisał,, O obrotach sfer niebieskich" i "Traktat o monetach"\nW 1521 roku odparł atak Krzyżaków na Olsztyn.\nW Olsztynie znajduje się tablica astronomiczna\nW Olsztynie znajduje się ławeczka Kopernika i jego pomnik.\nOlsztyn to obecnie stolica Warmii i Mazur.</string>
-
     <string name="lidzbark_info">W 1507 Kopernik na stałe przybył do Lidzbarka Warminśkiego by wspierać swojego wuja Łukasza Watzenrode\nWuj zaproponował Kopernikowi stanowisko biskupa warmińskiego,\nale on odmówił co spowodowało konflikt tak ostry że w 1510 astronom przeniósł się do Fromborka.\n</string>
-    <string name="frombork_info">We Fromborku Kopernik wymyślił teorię heliocentryczną, rozpowszechnić ją pomógł ordynariusz Jan Dantyszek.\nW 1539 Kopernik uczył Jerzego Retyka astronomii i trygonometrii.\nW połowie 1542 Kopernik wysłał do druku "De revulotionibus".\nW Grudniu 1542 astronom doznał wylewu krwii do mózgu na skutek czego stracił mowę i została sparaliżowana prawa połowa jego ciała.\nZmarł przed 23 maja 1543 roku we Fromborku</string>
-
+    <string name="frombork_info">We Fromborku Kopernik wymyślił teorię heliocentryczną, rozpowszechnić ją pomógł ordynariusz Jan Dantyszek.\nW połowie 1542 Kopernik wysłał do druku "De revulotionibus".\nW Grudniu 1542 astronom doznał wylewu krwii do mózgu na skutek czego stracił mowę i została sparaliżowana prawa połowa jego ciała.\nZmarł przed 23 maja 1543 roku we Fromborku</string>
     <string name="torun_info">Mikołaj Kopernik urodził się 19 lutego 1473 przy ulicy świętej Anny w Toruniu.\nMikołaj miał trójkę rodzeństwa, gdy jego ojciec umarł opiekę nad rodziną przejął Łukasz Watzenrode.\nEdukację rozpoczął w szkole miejskiej, potem poszedł na uniwersytecki wydział sztuk wyzwolonych.\nW wieku 18 lat pod naciskiem wuja rozpoczął studia na Wszechnicy Krakowskiej.</string>
-    <string name="dobre_info">Dobre Miasto było miastem biskupim. Przebiega przez nie pieszy szlak kopernikowski.\nNie ma jednak dowodów, że kopernik mieszkał w dobrym mieście.</string>
+    <string name="dobre_info">Dobre Miasto było miastem biskupim. Przebiega przez nie pieszy szlak kopernikowski.\nNie ma jednak dowodów, że kopernik mieszkał w Dobrym Mieście.</string>
     <string name="pieniezno_info">W Pieniężnie Kopernik mieszkał od 1517 do 1519 roku w zamku wybudowanym przez kapitułę warmińską na początku XIVw.</string>
 </resources>

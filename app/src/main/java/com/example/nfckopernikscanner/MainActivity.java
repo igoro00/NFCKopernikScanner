@@ -173,11 +173,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void move(String city) {
+        toast(city);
         Intent myIntent;
         Log.d(LOGCAT, "Going to " + city);
         if(city.equals("olsztyn") || city.equals("dobre") || city.equals("lidzbark") || city.equals("pieniezno") || city.equals("frombork") || city.equals("torun")) {
             myIntent = new Intent(this, CityActivity.class);
             myIntent.putExtra("EXTRA_CITY", city);
+            startActivity(myIntent);
         }
         else{
             toast(city + "nie jest poprawnym miastem");
