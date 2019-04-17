@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     protected void onResume() {
-        super.onResume();
+        super.onResume(); 
         setupForegroundDispatch(this, mNfcAdapter);
     }
 
