@@ -1,5 +1,5 @@
 # NFCKopernikScanner
-Aplikacja wyświetlająca informacje o szlaku Mikołaja Kopernika po zeskanowaniu taga NFC.
+Aplikacja kontrolująca robota Lego Mindstorms EV3 używając Bluetooth i NFC. Wyświetla również dodatkowe informacje o życiu Mikołaja Kopernika
 
 
 

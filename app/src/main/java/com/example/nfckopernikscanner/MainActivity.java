@@ -8,9 +8,7 @@ import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
-import android.nfc.tech.NfcF;
 import android.os.AsyncTask;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -56,19 +54,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-        /**
-         * It's important, that the activity is in the foreground (resumed). Otherwise
-         * an IllegalStateException is thrown.
-         */
         setupForegroundDispatch(this, mNfcAdapter);
     }
 
     @Override
     protected void onPause() {
-        /**
-         * Call this before onPause, otherwise an IllegalArgumentException is thrown as well.
-         */
         stopForegroundDispatch(this, mNfcAdapter);
 
         super.onPause();
@@ -76,13 +66,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onNewIntent(Intent intent) {
-        /**
-         * This method gets called, when a new Intent gets associated with the current activity instance.
-         * Instead of creating a new activity, onNewIntent will be called. For more information have a look
-         * at the documentation.
-         *
-         * In our case this method gets called, when the user attaches a Tag to the device.
-         */
         handleIntent(intent);
     }
 
@@ -169,28 +152,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private String readText(NdefRecord record) throws UnsupportedEncodingException {
-            /*
-             * See NFC forum specification for "Text Record Type Definition" at 3.2.1
-             *
-             * http://www.nfc-forum.org/specs/
-             *
-             * bit_7 defines encoding
-             * bit_6 reserved for future use, must be 0
-             * bit_5..0 length of IANA language code
-             */
-
             byte[] payload = record.getPayload();
-
-            // Get the Text Encoding
             String textEncoding = ((payload[0] & 128) == 0) ? "UTF-8" : "UTF-16";
-
-            // Get the Language Code
             int languageCodeLength = payload[0] & 0063;
-
-            // String languageCode = new String(payload, 1, languageCodeLength, "US-ASCII");
-            // e.g. "en"
-
-            // Get the Text
             return new String(payload, languageCodeLength + 1, payload.length - languageCodeLength - 1, textEncoding);
         }
 
@@ -209,28 +173,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void move(String city) {
+        //toast(city);
         Intent myIntent;
         Log.d(LOGCAT, "Going to " + city);
-        if (city.equals("olsztyn")) {
-            myIntent = new Intent(this, cOlsztyn.class);
-            this.startActivity(myIntent);
-        } else if (city.equals("dobre")) {
-            myIntent = new Intent(this, cDobre.class);
-            this.startActivity(myIntent);
-        } else if (city.equals("lidzbark")) {
-            myIntent = new Intent(this, cLidzbark.class);
-            this.startActivity(myIntent);
-        } else if (city.equals("pieniezno")) {
-            myIntent = new Intent(this, cPieniezno.class);
-            this.startActivity(myIntent);
-        } else if (city.equals("frombork")) {
-            myIntent = new Intent(this, cFrombork.class);
-            this.startActivity(myIntent);
-        } else if (city.equals("torun")) {
-            myIntent = new Intent(this, cTorun.class);
-            this.startActivity(myIntent);
-        } else {
-            Log.d(LOGCAT, city + " is not correct city");
+        if(city.equals("olsztyn") || city.equals("dobre") || city.equals("lidzbark") || city.equals("pieniezno") || city.equals("frombork") || city.equals("torun")) {
+            myIntent = new Intent(this, CityActivity.class);
+            myIntent.putExtra("EXTRA_CITY", city);
+            startActivity(myIntent);
+        }
+        else{
+            toast(city + "nie jest poprawnym miastem");
         }
     }
 
