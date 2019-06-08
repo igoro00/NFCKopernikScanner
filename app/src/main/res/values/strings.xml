@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">Kopernik</string>
-    <!-- tutaj jest nazwa aplikacji, ktora wyswietli sie uzytkownikowi.
+    <!-- tutaj jest nazwa aplikacji, która wyświetli sie uzytkownikowi.
     U mnie wyswietla sie tylko 8 pierwszych znakow(tylko "Szlakiem...")-->
-    <string name="olsztyn_info">Kopernik przybył do Olsztyna w 1516.\nTo tutaj napisał,, O obrotach sfer niebieskich" i "Traktat o monetach"\nW 1521 roku odparł atak Krzyżaków na Olsztyn.\nW Olsztynie znajduje się tablica astronomiczna\nW Olsztynie znajduje się ławeczka Kopernika i jego pomnik.\nOlsztyn to obecnie stolica Warmii i Mazur.</string>
-    <string name="lidzbark_info">W 1507 Kopernik na stałe przybył do Lidzbarka Warminśkiego by wspierać swojego wuja Łukasza Watzenrode\nWuj zaproponował Kopernikowi stanowisko biskupa warmińskiego,\nale on odmówił co spowodowało konflikt tak ostry że w 1510 astronom przeniósł się do Fromborka.\n</string>
-    <string name="frombork_info">We Fromborku Kopernik wymyślił teorię heliocentryczną, rozpowszechnić ją pomógł ordynariusz Jan Dantyszek.\nW połowie 1542 Kopernik wysłał do druku "De revulotionibus".\nW Grudniu 1542 astronom doznał wylewu krwii do mózgu na skutek czego stracił mowę i została sparaliżowana prawa połowa jego ciała.\nZmarł przed 23 maja 1543 roku we Fromborku</string>
-    <string name="torun_info">Mikołaj Kopernik urodził się 19 lutego 1473r. przy ulicy świętej Anny w Toruniu.\nMikołaj miał trójkę rodzeństwa, gdy jego ojciec umarł opiekę nad rodziną przejął Łukasz Watzenrode.\nEdukację rozpoczął w szkole miejskiej, potem poszedł na uniwersytecki wydział sztuk wyzwolonych.\nW wieku 18 lat pod naciskiem wuja rozpoczął studia na Wszechnicy Krakowskiej.</string>
+    <string name="olsztyn_info">Kopernik przybył do Olsztyna w 1516.\nTo tutaj napisał "O obrotach sfer niebieskich" i "Traktat o monetach".\nW 1521 roku odparł atak Krzyżaków na Olsztyn.\nWłaśnie tam znajduje się jego tablica astronomiczna.\nW Olsztynie znajduje się ławeczka Kopernika i jego pomnik.\nJest to obecnie stolica Warmii i Mazur.</string>
+    <string name="lidzbark_info">W 1507 Kopernik na stałe przybył do Lidzbarka Warmińskiego, by wspierać swojego wuja Łukasza Watzenrode.\nWuj zaproponował Kopernikowi stanowisko biskupa warmińskiego,\nale on odmówił co spowodowało konflikt tak ostry, że w 1510 astronom przeniósł się do Fromborka.\n</string>
+    <string name="frombork_info">We Fromborku Kopernik wymyślił teorię heliocentryczną, którą pomógł rozpowszechnić ordynariusz Jan Dantyszek.\nW połowie 1542 Kopernik wysłał do druku "De revulotionibus".\nW grudniu 1542 astronom doznał wylewu krwi do mózgu na skutek czego stracił mowę i prawa połowa jego ciała została sparaliżowana.\nZmarł przed 23 maja 1543 roku we Fromborku.</string>
+    <string name="torun_info">Kopernik urodził się 19 lutego 1473r, przy ulicy świętej Anny w Toruniu.\nMikołaj miał trójkę rodzeństwa. Gdy jego ojciec umarł, opiekę nad rodziną przejął Łukasz Watzenrode.\nKopernik edukację rozpoczął w szkole miejskiej, potem poszedł na uniwersytecki wydział sztuk wyzwolonych.\nW wieku 18 lat pod naciskiem wuja rozpoczął studia na Wszechnicy Krakowskiej.</string>
     <string name="dobre_info">Dobre Miasto było miastem biskupim. Przebiega przez nie pieszy szlak kopernikowski.\nNie ma jednak dowodów, że Kopernik mieszkał w Dobrym Mieście.</string>
-    <string name="pieniezno_info">W Pieniężnie Kopernik mieszkał od 1517 do 1519 roku w zamku wybudowanym przez kapitułę warmińską na początku XIVw.</string>
+    <string name="pieniezno_info">W Pieniężnie Kopernik mieszkał od 1517 do 1519 roku w zamku wybudowanym przez Kapitułę Warmińską na początku XIVw.</string>
     <string name="title_activity_maps">Mapa</string>
 </resources>
+
+

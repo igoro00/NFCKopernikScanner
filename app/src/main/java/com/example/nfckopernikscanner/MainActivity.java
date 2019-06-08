@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void btnClicked(View view) {
-        move("olsztyn");
+        //move("lidzbark");
     }
 
     public void move(String city) {
